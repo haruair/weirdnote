@@ -21,9 +21,9 @@
             <div class="header clearfix">
                 <nav>
                     <ul class="nav nav-pills pull-right">
-                        <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")"><a asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")"><a asp-controller="Home" asp-action="About">About</a></li>
-                        <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")"><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                        <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")"><a asp-controller="Home" asp-action="Index">홈</a></li>
+                        <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Post" ? "active" : "")"><a asp-controller="Note" asp-action="Post">작성하기</a></li>
+                        <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "List" ? "active" : "")"><a asp-controller="Note" asp-action="List">목록</a></li>
                     </ul>
                 </nav>
                 <h3 class="text-muted">WeirdNote</h3>
