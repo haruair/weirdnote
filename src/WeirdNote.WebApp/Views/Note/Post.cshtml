@@ -1,4 +1,15 @@
 @{
-    ViewData["Title"] = "Post Page";
+    ViewData["Title"] = "노트 작성하기";
 }
 <h2>@ViewData["Title"]</h2>
+
+<form method="post">
+  <div class="form-group">
+    <label>내용</label>
+    <textarea class="form-control" rows="6"></textarea>
+  </div>
+
+  <div class="form-buttons">
+    <button type="submit" class="btn btn-primary btn-lg center-block">저장하기</button>
+  </div>
+</form>
