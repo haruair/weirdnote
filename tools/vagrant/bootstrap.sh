@@ -34,3 +34,10 @@ nvm alias default v5.5.0
 # node related
 npm install -g yo bower grunt-cli gulp
 npm install -g generator-aspnet
+
+# initialize the project
+cd ~/weirdnote/src/WeirdNote.WebApp
+npm install && bower install
+gulp min
+dnu restore
+cd -
