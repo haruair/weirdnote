@@ -22,7 +22,7 @@
                 <nav>
                     <ul class="nav nav-pills pull-right">
                         <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")"><a asp-controller="Home" asp-action="Index">홈</a></li>
-                        <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Post" ? "active" : "")"><a asp-controller="Note" asp-action="Post">작성하기</a></li>
+                        <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "NewPost" ? "active" : "")"><a asp-controller="Note" asp-action="NewPost">작성하기</a></li>
                         <li role="presentation" class="@(ViewContext.RouteData.Values["Action"].ToString() == "List" ? "active" : "")"><a asp-controller="Note" asp-action="List">목록</a></li>
                     </ul>
                 </nav>

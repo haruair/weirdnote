@@ -1,12 +1,13 @@
+@model WeirdNote.WebApp.Models.Note
 @{
     ViewData["Title"] = "작성하기";
 }
 <h2>@ViewData["Title"]</h2>
 
-<form method="post">
+<form method="post" asp-controller="Note" asp-action="SubmitPost" role="form">
   <div class="form-group">
     <label>내용</label>
-    <textarea class="form-control" rows="6"></textarea>
+    <textarea class="form-control" asp-for="Content" rows="6"></textarea>
   </div>
 
   <div class="form-buttons">

@@ -1,4 +1,11 @@
+@model IEnumerable<WeirdNote.WebApp.Models.Note>
+
 @{
     ViewData["Title"] = "목록";
 }
+
 <h2>@ViewData["Title"]</h2>
+@foreach (var note in Model)
+{
+  <div class="note">@Html.DisplayFor(modelItem => note.Content)</div>
+}

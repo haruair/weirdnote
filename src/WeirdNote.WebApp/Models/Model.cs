@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Data.Entity;
 
 namespace WeirdNote.WebApp.Models
 {
@@ -12,7 +13,7 @@ namespace WeirdNote.WebApp.Models
 
     public class Note
     {
-      public int PostId { get; set; }
-      public string Note { get; set; }
+      public int NoteId { get; set; }
+      public string Content { get; set; }
     }
 }
