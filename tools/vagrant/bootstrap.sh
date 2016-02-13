@@ -8,6 +8,9 @@ sudo apt-get install -y unzip curl libunwind8 gettext libssl-dev libcurl4-openss
 # install libuv for KestrelHttpServer
 sudo apt-get install -y automake libtool
 
+# sqlite3
+sudo apt-get install libsqlite3-dev
+
 curl -sSL https://github.com/libuv/libuv/archive/v1.4.2.tar.gz | sudo tar zxfv - -C /usr/local/src
 cd /usr/local/src/libuv-1.4.2
 sudo sh autogen.sh
