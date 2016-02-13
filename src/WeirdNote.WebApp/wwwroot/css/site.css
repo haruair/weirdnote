@@ -85,3 +85,11 @@ body {
 .form-buttons {
   margin-bottom: 1em;
 }
+
+.note {
+  padding: 10px;
+}
+
+.note + .note {
+  border-top: 1px solid #dfdfdf;
+}
